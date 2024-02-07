@@ -1,129 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+  </head>
+  <body>
     <div id="nav">
-        <nav>
-            <div class="laper">
-                <div class="logo"><a href="">Portofolio</a></div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <style>
-*{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-}
-.laper{
-    width: 1100px;
-    margin: auto;
-    position: relative;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans',sans-serif;
-}
-.logo a{
-    font-size: 30px;
-    font-weight: 800;
-    float: left;
-    font-family: courier;
-    color:#364f6b;
-}
-.menu{
-    float: right;
-}
-nav{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    line-height: 40px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: #ffffff;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li{
-    float: left;
-}
-nav ul li a{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
-section{
-    margin: auto;
-    display: flex;
-    margin-bottom: 50px;
-}
-            </style>
-            <br>
-            <br>
-            </div>
-        </nav>
-<div class="riza"><!--untuk about-->
-    <h2 class="br">About Me</h2>
-   <div  class="about"><p class="br2"></p>
-   <p class="br3">I am a former Silat, in 2019 I took part in Pancak Silat activities. When in 2020 there was a pandemic, namely covid 19, and there we started training virtually, in 2021 we started to be active in the field of athletics , not long after I withdrew from being an athlete.
-    <p class="br4">My hobby is Running in the morning and evening.Running can make you  healty. I like Running because it can burn calories and also burn memory.
-    </p></</div>
-</div>
-<style>
-    .riza{
-        animation: fadil 1s ease-in alternate;
-    }
-    @keyframes fadil{
-        from{
-            transform: translateY(-1000px) scaleY(3);
+      <nav>
+        <div class="laper">
+          <div class="logo"><a href="">Portofolio</a></div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <style>
+          * {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+          }
+          .laper {
+            width: 1100px;
+            margin: auto;
+            position: relative;
+          }
+          body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Open Sans", sans-serif;
+          }
+          .logo a {
+            font-size: 30px;
+            font-weight: 800;
+            float: left;
+            font-family: courier;
+            color: #364f6b;
+          }
+          .menu {
+            float: right;
+          }
+          nav {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            line-height: 40px;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+          }
+          nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+          nav ul li {
+            float: left;
+          }
+          nav ul li a {
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 0px 16px 0px 16px;
+            text-decoration: none;
+          }
+          nav ul li a:hover {
+            text-decoration: underline;
+          }
+          section {
+            margin: auto;
+            display: flex;
+            margin-bottom: 50px;
+          }
+        </style>
+      </nav>
+
+      <div class="bor">
+        <!--untuk about-->
+        <div class="container">
+          <div class="about">
+            <h2 class="br">About Me</h2>
+            <p class="br3">
+              I am a former Silat, in 2019 I took part in Pancak Silat activities. When in 2020 there was a pandemic, namely covid 19, and there we started training virtually, in 2021 we started to be active in the field of athletics , not long after I withdrew from being an athlete.
+            </p>
+
+            <p class="br4">
+              My hobby is Running in the morning and evening.Running can make you  healty. I like Running because it can burn calories and also burn memory.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .br{
+          animation:riza 1s ease-in alternate;
         }
-        to{
-            transform: translateY(-10px) scaleY(2);
+        @keyframes riza{
+          from{
+            transform: translateX(1000px);
+          }
+          to{
+            transform: translateX(-10px);
+          }
         }
-    }
-    .about{
-        width: 400px;
-        margin-left: 510px;
-    }
-    .br3{
-        text-align: center;
-    }
-    .br4{
-        margin-top: 15px;
-        text-align: center;
-    }
-    .br{
-        text-align: center;
-        margin-top: 25px;
-        border-bottom:2px solid black;
-        width: 200px;
-        margin-left: 610px;
-    }
-    .br2{
-        margin-top: 40px;
-    }
-</style>
-</body>
+        .br3{
+          animation:riza 1s ease-in alternate;
+        }
+        @keyframes riza{
+          from{
+            transform: translateX(1000px);
+          }
+          to{
+            transform: translateX(-10px);
+          }
+        }
+        .br4{
+          animation:riza 1s ease-in alternate;
+        }
+        @keyframes riza{
+          from{
+            transform: translateX(1000px);
+          }
+          to{
+            transform: translateX(-10px);
+          }
+        }
+      
+        .bor {
+          height: 100vh;
+        }
+
+        .container {
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .about {
+          width: 900px;
+          justify-content: center;
+          align-items: center; 
+        }
+
+        @media (min-width:1000px) {
+            .about {
+          width: 700px;
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+        } 
+        }
+
+         @media (max-width: 412px) {
+            .about{
+                width: 400px;
+            }
+        } 
+
+        .br {
+          border-bottom: 2px solid black;
+          width: 140px;
+          align-self: center;
+          /* margin-left: 300px; */
+        }
+
+        .br3{
+          font-size: 30px;
+        }
+        .br4{
+          font-size: 30px;
+        }
+       
+
+      
+      </style>
+    </div>
+  </body>
 </html>
