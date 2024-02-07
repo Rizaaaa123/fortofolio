@@ -3,166 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>contact</title>
 
 </head>
 <body>
     <div id="nav">
         <nav>
-            <div class="laper">
-                <div class="logo"><a href="">Portofolio</a></div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+          <div class="laper">
+            <div class="logo"><a href="">Portofolio</a></div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <style>
+            * {
+              text-decoration: none;
+              margin: 0px;
+              padding: 0px;
+            }
+            .laper {
+              width: 1100px;
+              margin: auto;
+              position: relative;
+            }
+            body {
+              margin: 0px;
+              padding: 0px;
+              font-family: "Open Sans", sans-serif;
+            }
+            .logo a {
+              font-size: 30px;
+              font-weight: 800;
+              float: left;
+              font-family: courier;
+              color: #364f6b;
+            }
+            .menu {
+              float: right;
+            }
+            nav {
+              width: 100%;
+              margin: auto;
+              display: flex;
+              line-height: 40px;
+              position: sticky;
+              position: -webkit-sticky;
+              top: 0;
+             
+            }
+            nav ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+            }
+            nav ul li {
+              float: left;
+            }
+            nav ul li a {
+              color: black;
+              font-weight: bold;
+              text-align: center;
+              padding: 0px 16px 0px 16px;
+              text-decoration: none;
+            }
+            nav ul li a:hover {
+              text-decoration: underline;
+            }
+            section {
+              margin: auto;
+              display: flex;
+              margin-bottom: 50px;
+            }
+          </style>
+</nav>
+
+
+                <div class="container"><!--untuk contact-->
+                    <div class="box1">
+         <a href="https://wa.me/083128420404"><img src="https://www.its.ac.id/mt/wp-content/uploads/sites/48/2020/07/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png" width="140px" height="140px"></a>
+                    </div>
+                <div class="box2">
+                    <a href="https://www.instagram.com/ridzafaa_/"><img src="https://img.freepik.com/premium-vector/instagram-logo-vector-camera-icon-white-background_771881-267.jpg" width="250px" height="250px"></a>
+                </div>
+                <div class="box3">
+                    <a href="https://web.facebook.com/riza.fadillah.524"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"  width="130px" height="130px"></a>
                 </div>
             </div>
-            <style>
-*{
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
-}
-.laper{
-    width: 1100px;
-    margin: auto;
-    position: relative;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans',sans-serif;
-}
-.logo a{
-    font-size: 30px;
-    font-weight: 800;
-    float: left;
-    font-family: courier;
-    color:#364f6b;
-}
-.menu{
-    float: right;
-}
-nav{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    line-height: 40px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: #ffffff;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-nav ul li{
-    float: left;
-}
-nav ul li a{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    text-decoration: underline;
-}
-section{
-    margin: auto;
-    display: flex;
-    margin-bottom: 50px;
-}
-            </style>
-            <br>
-            <br>
-            </div>
-        </nav>
-        <div class="container"><!--untuk contact-->
-       <div class="box1">
-        <a href="https://wa.me/083128420404">
-    <img src="https://www.its.ac.id/mt/wp-content/uploads/sites/48/2020/07/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png" width="160px" height="160px">
-        
-       </div>
-       <div class="box2">
-        <a href="https://www.instagram.com/ridzafaa_/"><img src="https://img.freepik.com/premium-vector/instagram-logo-vector-camera-icon-white-background_771881-267.jpg" width="300px" height="300px"></a>
-       </div>
-       <div class="box3">
-        <a href="https://web.facebook.com/riza.fadillah.524"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="150px" height="150px"></a>
-    </div>
-       </div>
-       <style>
-       
-.box1{
-    width: 300px;
-    height: 210px;
+                <style>
+                    
+                    .box1{
+    /* width: 300px;
+    height: 210px; */
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 150px 70px;
-    animation: riza 1s ease-in alternate;
-}
-@keyframes riza{
-    from{
-        transform: translateX(-1000px);
-    }
-   to{
-    transform: translateX(-10px);
-   } 
-}
+    /* margin: 150px 40px; */
+    animation: kayla 1s  ease-in  alternate;
+                  
+                }
+
+                @keyframes kayla{
+                        from{
+                            transform: translateX(-1000px);
+                         
+                        }
+                        to{
+                            transform: translateX(-10px);
+                           
+                        }
+                    }
+
 .box2{
-    width: 300px;
-    height: 210px;
+    /* width: 300px;
+    height: 210px; */
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin: 150px 70px;
-      animation: riza 1s ease-in alternate;
+    /* margin: 150px 40px; */
+    animation: kayla1 1s  ease-in  alternate;
 }
-@keyframes riza{
-    from{
-        transform: translateX(-1000px);
-    }
-   to{
-    transform: translateX(-10px);
-   } 
-       
-}
+@keyframes kayla1{
+                        from{
+                            transform: translateX(-3000px);
+                         
+                        }
+                        to{
+                            transform: translateX(-10px);
+                           
+                        }
+                    }
+
 .box3{
-    width: 300px;
-    height: 210px;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin: 150px 70px;
-      animation: riza 1s ease-in alternate;
+    /* margin: 150px 40px; */
+    animation: kayla1 1s  ease-in  alternate;
 }
-@keyframes riza{
-    from{
-        transform: translateX(-1000px);
-    }
-   to{
-    transform: translateX(-10px);
-   } 
-}
-
-
+@keyframes kayla2{
+                        from{
+                            transform: translateX(-5000px);
+                         
+                        }
+                        to{
+                            transform: translateX(-10px);
+                           
+                        }
+                    }
 
 .container{
-        display: flex;
-        padding-left:
+   
+ display: flex;
+ /* padding-left: 100px; */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: space-around;
+    height: 100vh;
+}
 
-        grid-template-colums:repeat(auto-fit,minmax(270px,1fr)); 
-        </style>
+
+@media (max-width: 830px) {
+    .container{
+        display: block;
+    height: fit-content;
+
+    }
+    .box1{
+    padding-top: 40px;
+    margin-bottom: 50px;
+    }
+    .box2{
+        margin-bottom: 50px;
+    }
+    .box3{
+        padding-bottom: 50px;
+    }
+}
+
+                </style>
+                
+</body>
+</html>
