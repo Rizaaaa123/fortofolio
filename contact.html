@@ -7,6 +7,7 @@
 
 </head>
 <body>
+  <div id="particles-js">
     <div id="nav">
         <nav>
           <div class="laper">
@@ -53,7 +54,7 @@
               position: sticky;
               position: -webkit-sticky;
               top: 0;
-             
+             z-index: 10;
             }
             nav ul {
               list-style-type: none;
@@ -88,13 +89,23 @@
          <a href="https://wa.me/083128420404"><img src="https://www.its.ac.id/mt/wp-content/uploads/sites/48/2020/07/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png" width="140px" height="140px"></a>
                     </div>
                 <div class="box2">
-                    <a href="https://www.instagram.com/ridzafaa_/"><img src="https://img.freepik.com/premium-vector/instagram-logo-vector-camera-icon-white-background_771881-267.jpg" width="250px" height="250px"></a>
+                    <a href="https://www.instagram.com/ridzafaa_/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" width="140px" height="140px"></a>
                 </div>
                 <div class="box3">
-                    <a href="https://web.facebook.com/riza.fadillah.524"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"  width="130px" height="130px"></a>
+                    <a href="https://web.facebook.com/riza.fadillah.524"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"  width="140px" height="140px"></a>
                 </div>
             </div>
                 <style>
+                    body{
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+            #particles-js{
+                height: 100%;
+                background-color: #42867e;
+            }
                     
                     .box1{
     /* width: 300px;
@@ -168,14 +179,19 @@
  /* padding-left: 100px; */
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     justify-content: space-around;
-    height: 100vh;
+  height: 100%;
+  position: absolute;
+   top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
 }
 
 
 @media (max-width: 830px) {
     .container{
         display: block;
-    height: fit-content;
+   top: 100px;
 
     }
     .box1{
@@ -191,6 +207,10 @@
 }
 
                 </style>
+                </div>
+                           <script type="text/javascript" src="particles.js"></script>
+           <script type="text/javascript" src="app.js"></script>
+
                 
 </body>
 </html>
