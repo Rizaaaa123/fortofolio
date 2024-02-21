@@ -6,8 +6,9 @@
     <title>about</title>
   </head>
   <body>
+     <div id="particles-js">
     <div id="nav">
-      <nav>
+        <nav>
         <div class="laper">
           <div class="logo"><a href="">Portofolio</a></div>
           <div class="menu">
@@ -19,6 +20,7 @@
           </div>
         </div>
         <style>
+          
           * {
             text-decoration: none;
             margin: 0px;
@@ -52,6 +54,7 @@
             position: sticky;
             position: -webkit-sticky;
             top: 0;
+            z-index: 10;
           }
           nav ul {
             list-style-type: none;
@@ -85,11 +88,11 @@
         <div class="container">
           <div class="about">
             <h2 class="br">About Me</h2>
-            <p class="br3">
+            <p class="br3" align="center">
             I am a former Silat, in 2019 I took part in Pancak Silat activities. When in 2020 there was a pandemic, namely covid 19, and there we started training virtually, in 2021 we started to be active in the field of athletics , not long after I withdrew from being an athlete.
             </p>
 
-            <p class="br4">
+            <p class="br4" align="center">
              My hobby is Running in the morning and evening.Running can make you  healty. I like Running because it can burn calories and also burn memory.
             </p>
           </div>
@@ -97,8 +100,30 @@
       </div>
 
       <style>
+         body{
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            #particles-js{
+                height: 100%;
+                background-color: rgb(215,195,82);
+            }
+
       .br{
         animation: riza 1s ease-in alternate;
+         border-bottom: 2px solid black;
+          width: 140px;
+          margin: auto;
+          margin-bottom: 100px;
+         /* margin-left: 300px;
+          margin-top: 50px;
+           top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;*/
       }
       @keyframes riza{
         from{
@@ -110,6 +135,13 @@
       }
       .br3{
         animation: riza 1s ease-in alternate;
+
+       /* position: absolute;
+       
+        top: 200px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;*/
       }
       @keyframes riza{
         from{
@@ -121,6 +153,8 @@
       }
       .br4{
         animation: riza 1s ease-in alternate;
+        /*position: absolute;*/
+        /*margin-top: 150px;*/
       }
       @keyframes riza{
         from{
@@ -130,24 +164,31 @@
           transform: translateX(-10px);
         }
       }
-        .bor {
+       /* .bor {
           height: 100vh;
         }
-
+*/
         .container {
           display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 300px;
         }
         .about {
-          width: 900px;
+          display: inline-block;
           justify-content: center;
           align-items: center; 
+
         }
 
-        @media (min-width:1000px) {
+        @media (min-width:100px) {
             .about {
-          width: 700px;
+          width: 600px;
           /* display: flex;
           justify-content: center;
           align-items: center; */
@@ -160,16 +201,13 @@
             }
         } 
 
-        .br {
-          border-bottom: 2px solid green;
-          width: 140px;
-          align-self: center;
-          /* margin-left: 300px; */
-        }
-       
+      
 
       
       </style>
-    </div>
+              </div>
+           <script type="text/javascript" src="particles.js"></script>
+           <script type="text/javascript" src="app.js"></script>
+
   </body>
 </html>
